@@ -1,6 +1,10 @@
 <?php
 
+use App\Http\Controllers\dashboardController;
+use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\loginController;
 use Illuminate\Support\Facades\Route;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -13,19 +17,25 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('Login');
-});
+// Route::get('/', function () {
+//     return view('login.index');
+// });
 Route::get('/ForgetPass', function () {
     return view('ForgetPass');
 });
-Route::get('/Regis', function () {
-    return view('Regis');
-});
+// Route::get('/Regis', function () {
+//     return view('Regis');
+// });
 
-Route::get('/RingkasanPolis', function () {
-    return view('RP.RingkasanPolis');
-});
+Route::resource('/register', RegisterController::class);
+
+Route::resource('/',loginController::class);
+
+Route::resource('/dashboard', dashboardController::class);
+
+// Route::get('/RingkasanPolis', function () {
+//     return view('RP.RingkasanPolis');
+// });
 
 Route::get('/ProfilPolis1', function () {return view('ProfilPolis.ProfilPolis1');});
 Route::get('/DataPersonal1', function () {return view('ProfilPolis.DataPersonal1');});
@@ -53,7 +63,7 @@ Route::get('/HistoriPerubahan2', function () {return view('RT.HistoriPerubahan2'
 Route::get('/TagihanPremi2', function () {return view('RT.TagihanPremi2');});
 Route::get('/HistoriKlaim2', function () {return view('RT.HistoriKlaim2');});
 Route::get('/HistoriPembayaran2', function () {return view('RT.HistoriPembayaran2');});
-    
+
 Route::get('/Kamus', '\App\Http\Controllers\KamusController@index');
 Route::get('/Fitur', '\App\Http\Controllers\FeaturesController@index');
 
