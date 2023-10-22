@@ -18,9 +18,13 @@ class dashboardController extends Controller
         //     abort(403);
         // }
 
-        return  view('dashboard.index',[
-            'data_user'=>User::all()
-        ]);
+        if(auth()->user()->is_admin){
+
+            return  view('dashboard.index',[
+
+                'data_user'=>User::all()
+            ]);
+        }
     }
 
     /**

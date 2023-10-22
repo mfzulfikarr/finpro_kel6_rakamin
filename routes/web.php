@@ -29,9 +29,11 @@ Route::get('/ForgetPass', function () {
 
 Route::resource('/register', RegisterController::class);
 
-Route::resource('/',loginController::class);
+Route::get('/',[loginController::class,'index'])->name('login')->middleware('guest');
 
-Route::resource('/dashboard', dashboardController::class);
+Route::post('/', [loginController::class, 'authenticate']);
+
+Route::resource('/dashboard', dashboardController::class)->middleware('auth');
 
 // Route::get('/RingkasanPolis', function () {
 //     return view('RP.RingkasanPolis');
