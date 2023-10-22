@@ -23,38 +23,15 @@
 <body>
     <div class="wrapper">
             <div class="image-holder">
-                <!-- <img src="picture2.png" alt=""> -->
-                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <a href="https://www.commlife.co.id/">
-                          <img src="img/picture4.png" class="d-block w-100" alt="...">
-                      </a>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="https://www.commlife.co.id/">
-                            <img src="img/picture5.png" class="d-block w-100" alt="...">
-                        </a>
-                    </div>
-
-                  </div>
-                  <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                  </a>
-                  <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                  </a>
-                </div>
-
+                <img src="img/properti.jpg" class="gambar" alt="">
             </div>
+
             <div class="form-inner">
                 <form id="FormPass" action="/register" method="post">
                     @csrf
                     <div class="form-header">
                         <br>
-                        <img src="img/logo.png" alt="" class="logo" style="margin-bottom: 20px;">
+                        <h1><span style="font-weight: normal;">iGen</span><span style="font-weight: bold;">Protection</span></h1>
                         <h3>Form Registrasi</h3>
 
                     </div>
