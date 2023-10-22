@@ -34,8 +34,8 @@
                 <i class="fas fa-arrow-left"></i>
             </div>
 
-            <div class="sidebar-header" style="background-color: #f7ba02">
-                <img src="img/logo.png" style="width: 170px">
+            <div class="sidebar-header" style="background-color: #115cff">
+              <h1><span style="font-weight: normal;">iGen</span><span style="font-weight: bold;">Protection</span></h1>
             </div>
 
             <ul class="list-unstyled componentsmenu">
@@ -94,9 +94,9 @@
         <!-- Page Content  -->
         <div id="content">
             <!-- navbar atas -->
-            <nav class="navbar navbar-expand navbar-light bg-light">
+            <nav class="navbar navbar-expand navbar-light ">
 
-                    <button type="button" id="sidebarCollapse" class="btn btn-dark" style="font-size: 13px;">
+                    <button type="button" id="sidebarCollapse" class="btn btn-warning" style="font-size: 13px;">
                         <i class="fas fa-bars"></i> Menu
                         <span></span>
                     </button>
@@ -106,17 +106,17 @@
                             <li class="nav-item dropdown filter-dropdown no-arrow my-auto menu2">
                                 <a href="#" style="border-style: none;" class="btn nav-link" id="userDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">
                                     <i class="fas fa-envelope-open" style="color: grey;"></i>
-                                    <span class="mr-2 d-lg-inline text-gray-600 small"> Pesan</span>
+                                    <span class="mr-2 d-lg-inline text-light"> Pesan</span>
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
                                     <button class="dropdown-item akun" data-toggle="modal" data-target="#Pesan">
-                                        <i class="far fa-edit fa-sm fa-fw mr-2 text-gray-400"></i>
+                                        <i class="far fa-edit fa-sm fa-fw mr-2 text"></i>
                                         Tulis Pesan
                                     </button>
 
                                     <a class="dropdown-item akun" href="#" data-toggle="modal" data-target="#PesanMasuk">
-                                        <i class="fas fa-envelope fa-sm fa-fw mr-2 text-gray-400"></i>
+                                        <i class="fas fa-envelope fa-sm fa-fw mr-2 text"></i>
                                         Kotak Masuk
                                     </a>
                                 </div>
@@ -127,7 +127,7 @@
 
                             <li class="nav-item dropdown filter-dropdown no-arrow menu2">
                                 <a href="#" style="border-style: none;" class="btn nav-link" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <span class="mr-2 d-none d-lg-inline text-gray-600 small"> INI NATI DIISI PAKE AUTH</span>
+                                    <span class="mr-2 d-none d-lg-inline text-light"> INI NATI DIISI PAKE AUTH</span>
                                     <img class="img-profile rounded-circle" src="img/profile.png">
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
