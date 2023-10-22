@@ -51,7 +51,7 @@ class RegisterController extends Controller
 
         User::create($validate);
 
-        return redirect('login.index');
+        return redirect('/login');
     }
 
     /**

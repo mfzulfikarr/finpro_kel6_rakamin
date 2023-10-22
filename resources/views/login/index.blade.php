@@ -28,8 +28,28 @@
 
             <div class="form-inner">
                 <br>
-                <form action="/" method="POST">
+                <form action={{ url('/') }} method="post">
                     @csrf
+                    @if ($errors->any())
+                                    <div class="flex p-4 mb-4 text-sm text-red-600 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400"
+                                        role="alert">
+                                        <svg class="flex-shrink-0 inline w-4 h-4 mr-3 mt-[2px]" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                            <path
+                                                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z" />
+                                        </svg>
+                                        <span class="sr-only">Error</span>
+                                        <div>
+                                            <span class="font-medium">Ensure that these requirements are met:</span>
+                                            <ul class="mt-1.5 ml-4 list-disc list-inside">
+                                                @foreach ($errors->all() as $error)
+                                                    <li>{{ $error }}</li>
+                                                @endforeach
+                                            </ul>
+                                        </div>
+                                    </div>
+                                @endif
+
                     <div class="form-header">
                       <h1><span style="font-weight: normal;">iGen</span><span style="font-weight: bold;">Protection</span></h1>
                       <h3><span style="font-weight: normal;">Welcome back to tech insurance, enter your</span><span style="font-weight: bold;"> Login</span>
@@ -38,13 +58,13 @@
                     <div class="form-group">
                         <label for="" style="font-size: 15px;">Email (*)</label>
                         <div>
-                          <input type="text" class="form-control" id="Username" aria-describedby="loginhelp" minlength="3" maxlength="12" required name="username">
+                          <input type="text" class="form-control" id="Username" aria-describedby="loginhelp" minlength="3" maxlength="12"  name="username">
                         </div>
                     </div>
 
                     <div class="form-group" >
                         <label for="inputPassword3" style="font-size: 15px;">Password (*)</label>
-                        <input type="password" class="form-control" id="pass" minlength="7" maxlength="20" aria-describedby="passwordHelpInline" required name="password">
+                        <input type="password" class="form-control" id="pass" minlength="7" maxlength="20" aria-describedby="passwordHelpInline"  name="password">
                         <span id="mybutton" onclick="change()"><i class="fas fa-eye fa-sm"></i></span>
                     </div>
 
@@ -58,7 +78,7 @@
                     <span>
                         <center>
                             <br>
-                            <button class="btn btn-warning btn-block"><b>Login</b></button>
+                            <button type="submit" class="btn btn-warning btn-block"><b>Login</b></button>
                             <br>
                         </center>
                         <center>
@@ -71,24 +91,6 @@
 
         </div>
 
-        <!-- Modal Alert Register -->
-      <div class="modal fade" tabindex="-1" id="PassBerhasil" data-backdrop="static" data-keyboard="false" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h4 class="modal-title"><i class="fas fa-unlock"></i> Proses Pendaftaran Akun</h4>
-              </div>
-              <div class="modal-body">
-                    <div class="progress pass5">
-                        <div class="progress-bar passprog bg-warning progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div>
-                    </div>
-
-                    <div class="alert alertpass alert-success" role="alert">Akun Anda Telah Didaftarkan <a href="" data-dismiss="modal" class="alert-link">Klik melakukan login</a></div>
-              </div>
-
-            </div><!-- /.modal-content -->
-          </div><!-- /.modal-dialog -->
-        </div><!-- /.modal -->
 
 
          <!-- jQuery CDN - Slim version (=without AJAX) -->
@@ -101,65 +103,4 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
 
 
-        <script>
-            $('#FormPass').on('submit', function(e){
-                document.getElementById("LAC").value = "";
-                document.getElementById("NoPol").value = "";
-                document.getElementById("Username").value = "";
-                document.getElementById("Email").value = "";
-                document.getElementById("passbaru").value = "";
-                document.getElementById("passbaru2").value = "";
-                $('#PassBerhasil').modal('show');
-                e.preventDefault();
-            });
-        </script>
-
-        <script>
-                $('#FormPass').on('submit', function(e){
-                  $('.passprog').each(function() {
-                    var $coba = $('.pass5');
-                    var $alert = $('.alertpass');
-                    $('.passprog').css('width', '0%').attr('aria-valuenow', 0);
-                    $alert.hide();
-                    $coba.show();
-
-                    var $bar = $(this);
-                    var progress = setInterval(function() {
-
-                      var currWidth = parseInt($bar.attr('aria-valuenow'));
-                      var maxWidth = parseInt($bar.attr('aria-valuemax'));
-
-                      //update the progress
-                        $bar.width(currWidth+'%');
-                        $bar.attr('aria-valuenow',currWidth+10);
-
-                      //clear timer when max is reach
-                      if (currWidth >= maxWidth){
-                        clearInterval(progress);
-                        $coba.hide();
-                        $alert.show();
-                      }
-
-                    }, 500);
-                    });
-                });
-        </script>
-
-        <script type="text/javascript">
-            function change()
-             {
-                var x = document.getElementById('pass').type;
-
-                if (x == 'password')
-                {
-                   document.getElementById('pass').type = 'text';
-                   document.getElementById('mybutton').innerHTML = '<i class="fas fa-eye-slash fa-sm"></i>';
-                }
-                else
-                {
-                   document.getElementById('pass').type = 'password';
-                   document.getElementById('mybutton').innerHTML = '<i class="fas fa-eye fa-sm"></i>';
-                }
-             }
-        </script>
 </body>

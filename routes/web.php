@@ -26,10 +26,14 @@ Route::get('/ForgetPass', function () {
 // Route::get('/Regis', function () {
 //     return view('Regis');
 // });
-
+Route::get('/', function () {
+    return view('welcome');
+});
 Route::resource('/register', RegisterController::class);
 
-Route::resource('/',loginController::class);
+Route::get('/',[loginController::class,'index'])->name('login')->middleware('guest');
+
+Route::post('/', [loginController::class, 'authenticate']);
 
 Route::resource('/dashboard', dashboardController::class);
 

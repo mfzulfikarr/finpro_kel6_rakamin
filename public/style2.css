@@ -83,7 +83,7 @@ a:focus {
     height: 35px;
     line-height: 35px;
     text-align: center;
-    background: #FFCC33;
+    background: #2F37A4;
     position: absolute;
     top: 10px;
     right: 10px;
@@ -95,7 +95,7 @@ a:focus {
 
 #dismiss:hover {
     background: #fff;
-    color: #FFCC33;
+    color: #2F37A4;
 }
 
 .overlay {
@@ -176,7 +176,7 @@ a[data-toggle="collapse"] {
 
 .dropdown-item:hover {
         color: white;
-        background-color: #FFCC33;
+        background-color: #2F37A4;
     }
 
 .subsub{
@@ -187,7 +187,7 @@ a[data-toggle="collapse"] {
 }
 
 ul.menu2{
-    background: #FFCC33;
+    background: #2F37A4;
 }
 
 .line_verikal{
@@ -208,8 +208,8 @@ ul.menu2{
 }
 
 .form-control:focus {
-        border-color: #FFCC33;
-        box-shadow: 0 0 0 0.1rem #FFCC33;
+        border-color: #2F37A4;
+        box-shadow: 0 0 0 0.1rem #2F37A4;
 } 
 
 [aria-expanded="false"] > .expanded, [aria-expanded="true"] > .collapsed {
@@ -220,7 +220,7 @@ ul.menu2{
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
-    background: #f7ba02;
+    background: #2F37A4;
 }
 
 ul.CTAs {
@@ -269,20 +269,20 @@ a.article:hover {
 
 #userDropdown:hover { 
     background-color: inherit;
-    outline-color: yellow; 
+    outline-color: #2F37A4; 
     color: grey;
 }
 
 #userDropdown:focus { 
    border-style: none !important;
-   outline-color: yellow;
+   outline-color:#2F37A4;
    background-color: inherit;
    color: grey;
 }
 
 #userDropdown:active{ 
    border-style: none !important;
-   outline-color: yellow;
+   outline-color: #2F37A4;
    background-color: inherit;
 }
 
@@ -315,7 +315,7 @@ td,tr{
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: #FFCC33;
+  background-color: #2F37A4;
   color: white;
   cursor: pointer;
   padding: 13px;
