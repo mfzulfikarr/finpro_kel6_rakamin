@@ -26,16 +26,16 @@ Route::get('/ForgetPass', function () {
 // Route::get('/Regis', function () {
 //     return view('Regis');
 // });
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 Route::resource('/register', RegisterController::class);
 
-Route::get('/',[loginController::class,'index'])->name('login')->middleware('guest');
+Route::get('/login',[loginController::class,'index'])->name('login')->middleware('guest');
 
-Route::post('/', [loginController::class, 'authenticate']);
+Route::post('/login', [loginController::class, 'authenticate']);
 
-Route::resource('/dashboard', dashboardController::class);
+Route::resource('/dashboard', dashboardController::class)->middleware('auth');
 
 // Route::get('/RingkasanPolis', function () {
 //     return view('RP.RingkasanPolis');

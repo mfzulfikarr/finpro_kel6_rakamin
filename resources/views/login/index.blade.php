@@ -51,7 +51,7 @@
             </div>
             <div class="form-inner">
                 <br>
-                <form action={{ url('/') }} method="post">
+                <form action={{ url('/login') }} method="post">
                     @csrf
                     @if ($errors->any())
                                     <div class="flex p-4 mb-4 text-sm text-red-600 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400"

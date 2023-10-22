@@ -51,7 +51,9 @@ class RegisterController extends Controller
 
         User::create($validate);
 
-        return redirect('/login');
+
+
+        return response()->json(['message'=> 'User has been registered'],200)->redirect('/login');
     }
 
     /**
