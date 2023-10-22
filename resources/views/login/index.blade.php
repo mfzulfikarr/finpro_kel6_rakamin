@@ -23,32 +23,9 @@
 <body>
     <div class="wrapper">
             <div class="image-holder">
-                <!-- <img src="picture2.png" alt=""> -->
-                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <a href="https://www.commlife.co.id/">
-                          <img src="img/picture4.png" class="d-block w-100" alt="...">
-                      </a>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="https://www.commlife.co.id/">
-                            <img src="img/picture5.png" class="d-block w-100" alt="...">
-                        </a>
-                    </div>
-
-                  </div>
-                  <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                  </a>
-                  <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                  </a>
-                </div>
-
+                <img src="img/properti3.jpg" class="gambar" alt="">
             </div>
+
             <div class="form-inner">
                 <br>
                 <form action={{ url('/') }} method="post">
@@ -74,12 +51,12 @@
                                 @endif
 
                     <div class="form-header">
-                        <img src="img/logo.png" alt="" class="logo" style="margin-bottom: 20px;">
-                        <h3>Login To Continue</h3>
-
+                      <h1><span style="font-weight: normal;">iGen</span><span style="font-weight: bold;">Protection</span></h1>
+                      <h3><span style="font-weight: normal;">Welcome back to tech insurance, enter your</span><span style="font-weight: bold;"> Login</span>
+                          <span style="font-weight: normal;"> data to get unlimited access</span></h3>
                     </div>
                     <div class="form-group">
-                        <label for="" style="font-size: 15px;">Username (*)</label>
+                        <label for="" style="font-size: 15px;">Email (*)</label>
                         <div>
                           <input type="text" class="form-control" id="Username" aria-describedby="loginhelp" minlength="3" maxlength="12"  name="username">
                         </div>
@@ -104,28 +81,10 @@
                             <button type="submit" class="btn btn-warning btn-block"><b>Login</b></button>
                             <br>
                         </center>
+                        <center>
+                        <p style="font-size: 15px;">Belum memiliki akun? <a href="/register">Register</a></p>
+                        </center>
                     </span>
-
-                    <center>
-                        <p style="font-size: 15px;">Belum memiliki akun? <a href="/register">Daftar di sini</a></p>   <br>
-                    </center>
-
-                    <p style="font-size: 15px; text-align: center;">Untuk informasi lebih lanjut kunjungi <a href="https://www.commlife.co.id/">commlife.co.id</a>
-                        <br>Atau
-                        <a href="tel:1500525">
-                            Hubungi Customer Care di 1500525 <i class="fas fa-phone fa-sm"></i>
-                        </a>
-                    </p>
-
-
-                    <center>
-                        <p style="font-size: 15px;text-align: center;">Ikuti Kami <br>
-                        <a href="https://www.facebook.com/fwdinsuranceindonesia"><img src="img/fb.png" class="Follow"></a>
-                        <a href="https://www.instagram.com/fwdinsuranceid/"><img src="img/ig.png" class="Follow"></a>
-                        <a><img src="img/twitter.png" class="Follow"></a>
-                        </p>
-                    </center>
-
                 </form>
 
             </div>

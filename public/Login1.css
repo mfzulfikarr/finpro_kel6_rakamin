@@ -1,26 +1,19 @@
-/*.bg{
-	display: flex;
-	min-height: 100vh;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Hammersmith One', sans-serif;
+  text-decoration: none;
+  list-style: none;
 }
 
-.gambar{
-	width: 69.9%;
-	background-image: url('picture2.png');
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-}
-
-.formulir{
-	width: 30.1%;
-}*/
 body {
-  font-family: 'Poppins', sans-serif;
   font-size: 1.1em;
   font-weight: 300;
   line-height: 1.4em;
   margin: 0;
   color: black; 
+  background-color: rgb(79, 156, 156);
 }
 
 input, textarea, select, button {
@@ -31,42 +24,40 @@ input, textarea, select, button {
 }
 
 .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
-  display: flex; 
 }
 .wrapper .image-holder {
-  width: 65%; 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 50%;
 }
 .wrapper .form-inner {
-  width: 35%; 
+  width: 50%;
+  padding-top: 30px;
+  padding-bottom: 50px;
 }
 
 .image-holder {
   background-repeat: no-repeat;
   background-size: cover; 
   background-position: center;
-  
+  width: 50%;
 }
 
 .image-holder img {
   display: none; 
 }
 
-.Follow{
-  height: 30px;
-  width: 30px;
-  margin-left: 10px;
-}
 
-.form-inner {
-  background: white;
-  
-  padding-left: 4vw;
-  padding-right: 4vw; 
-}
 
-.logo{
-  width: 250px;
+
+
+.form-header h1 {
+  margin-bottom: 30px;
 }
 
 h3 {
@@ -81,6 +72,16 @@ label{
 
 form {
   width: 100%; 
+  flex-grow: 1;
+  background: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 100px;
+  width: 600px;
+  margin: 0 auto; /* Center the card horizontally */
+  border-radius: 20px;
+  flex-direction: column; /* Set the direction to column to stack child elements vertically */
+  justify-content: center;
+  align-items: center; /* Center child elements horizontally */
 }
 
 .form-header {
@@ -97,14 +98,21 @@ form {
 }
 
 /*---------------------------------------------------------------*/
+@media (max-width: 1200px) {
+  form{
+    width: 80%;
+  }
+  h1{
+    font-size: 30px;
+  }
+  h3{
+    font-size: 15px;
+  }
+}
+
 
 @media (min-width: 951px) {
-  .form-inner {
-    align-items: center;
-    padding-top: 0;
-    padding-left: 4vw;
-    padding-right: 4vw; 
-	} 
+  
 	.image-holder img {
     display: block; 
 	width: 100%;
@@ -115,6 +123,10 @@ form {
 }
   .logo{
     width: 250px;
+}
+.wrapper .form-inner {
+  padding-top: 0;
+  padding-bottom: 70px;
 }
 }
 
@@ -134,10 +146,11 @@ form {
       width: 100%;
       height: auto; 
     }
-
+    form {
+      padding: 80px;
+    }
+  }
   .form-inner {
-    padding-left: 20vw;
-    padding-right: 20vw; 
 	  height: 100vh;
 	}
 
@@ -148,21 +161,9 @@ form {
   #mybutton {
     left: 93%;
   }
-}	
 
- 
-/*@media (max-width: 991px) {
-  .wrapper .image-holder {
-    height: 37vh; }
-  .wrapper .form-inner {
-    height: 63vh; }
 
-  .socials {
-    margin-top: 40px; }
-
-  .form-header {
-    margin-bottom: 30px; } }*/
-@media (max-width: 767px) {
+@media (max-width: 650px) {
   .wrapper .form-inner {
     height: auto; }
   .wrapper .image-holder {
@@ -173,8 +174,22 @@ form {
 	width: 100%;}
 
   .form-inner {
-    padding: 30px 20px; 
 	}
+  form {
+    padding: 60px;
+    width: 500px;
+  }
 }
 
-  
+@media (max-width: 480px) {
+  form {
+    padding: 40px;
+    width: 300px;
+  }
+  h1{
+    font-size: 30px;
+  }
+  h3{
+    font-size: 15px;
+  }
+}
