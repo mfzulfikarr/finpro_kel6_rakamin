@@ -20,13 +20,13 @@ class loginController extends Controller
         ]);
 
     $credentials = $request->only('username', 'password');
-        if (Auth::attempt($credentials)) {
-            if(auth()->user()->is_admin){
+        // if (Auth::attempt($credentials)) {
+        //     if(auth()->user()->is_admin){
 
                 return redirect('/dashboard');
-            }
-        }
-         return back()->withErrors(['username' => 'username atau password salah']);
+        //     }
+        // }
+        //  return back()->withErrors(['username' => 'username atau password salah']);
 
         // $credentials = $request->validate([
         //     'username'=>'required',

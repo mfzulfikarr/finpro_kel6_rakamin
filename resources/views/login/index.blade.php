@@ -56,7 +56,7 @@
                           <span style="font-weight: normal;"> data to get unlimited access</span></h3>
                     </div>
                     <div class="form-group">
-                        <label for="" style="font-size: 15px;">Email (*)</label>
+                        <label for="" style="font-size: 15px;">Username (*)</label>
                         <div>
                           <input type="text" class="form-control" id="Username" aria-describedby="loginhelp" minlength="3" maxlength="12"  name="username">
                         </div>

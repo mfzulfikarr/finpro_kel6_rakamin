@@ -35,7 +35,7 @@ Route::get('/login',[loginController::class,'index'])->name('login')->middleware
 
 Route::post('/login', [loginController::class, 'authenticate']);
 
-Route::resource('/dashboard', dashboardController::class)->middleware('auth');
+Route::resource('/dashboard', dashboardController::class);
 
 // Route::get('/RingkasanPolis', function () {
 //     return view('RP.RingkasanPolis');
