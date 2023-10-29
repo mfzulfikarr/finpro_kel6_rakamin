@@ -50,8 +50,13 @@ class RegisterController extends Controller
         // $table->timestamps();
 
         User::create($validate);
+        return response()->json([
+            'status' => 'success',
+            'message' => 'Selamat, Anda telah berhasil mendaftar!',
+        ]);
 
-        return redirect('login.index');
+
+        return response()->json(['message'=> 'User has been registered'],200)->redirect('/login');
     }
 
     /**

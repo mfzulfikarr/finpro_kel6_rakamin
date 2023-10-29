@@ -93,7 +93,7 @@
                     </span>
 
                     <center>
-                        <p style="font-size: 15px;">Sudah memiliki akun? <a href="/">Login</a></p>
+                        <p style="font-size: 15px;">Sudah memiliki akun? <a href="/login">Login</a></p>
                     </center>
                 </form>
             </div>
@@ -112,7 +112,7 @@
                         <div class="progress-bar passprog bg-warning progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div>
                     </div>
 
-                    <div class="alert alertpass alert-success" role="alert">Akun Anda Telah Didaftarkan <a href="/" class="alert-link">Klik disini untuk melakukan login</a></div>
+                    <div class="alert alertpass alert-success" role="alert">Akun Anda Telah Didaftarkan <a href="/login" class="alert-link">Klik disini untuk melakukan login</a></div>
               </div>
 
             </div><!-- /.modal-content -->
