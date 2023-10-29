@@ -53,7 +53,6 @@ header{
    
 }
 
-<<<<<<< HEAD
 .inner-main-nav {
     max-width: 1170px;
     margin: auto;
@@ -63,51 +62,6 @@ header{
 .inner-main-nav ul {
     text-align: right;
     margin: 0;
-=======
-#dismiss {
-    width: 35px;
-    height: 35px;
-    line-height: 35px;
-    text-align: center;
-    background: #2F37A4;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
-    -webkit-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
-}
-
-#dismiss:hover {
-    background: #fff;
-    color: #2F37A4;
-}
-
-.overlay {
-    display: none;
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.7);
-    z-index: 998;
-    opacity: 0;
-    transition: all 0.5s ease-in-out;
-}
-.overlay.active {
-    display: block;
-    opacity: 1;
-}
-
-#sidebar .sidebar-header {
-    padding: 20px;
-    background: #6d7fcc;
-}
-
-
-
-#sidebar ul.componentsmenu {
->>>>>>> 85c52131b6cbe02aff5a809d9c20edc43067cc04
     padding: 20px 0;
 }
 
@@ -137,11 +91,6 @@ header{
     cursor: pointer;
 }
 
-.inner-main-nav img {
-    border-radius: 50%;
-    width: 30px;
-}
-
 .logo {
     color: rgb(255, 255, 255);
     font-size: 20px;
@@ -151,9 +100,8 @@ header{
     transform: translateX(-50%);
 }
 
-<<<<<<< HEAD
 .login{
-    color: #f5f5f5;
+    color: #ffffff;
     text-decoration: none;
     border-radius: 10px;
     font-size: 15px;
@@ -163,14 +111,18 @@ header{
 }
 
 .login:hover {
-    color: #F2BD59;
     cursor: pointer;
+    color: #F2BD59;
     transform: scale(1.03);
     transition: all 1s ease;
 }
 
+.inner-main-nav img {
+    border-radius: 50%;
+    width: 30px;
+}
 
-=======
+
 .dropdown-item:hover {
         color: white;
         background-color: #2F37A4;
@@ -219,7 +171,6 @@ ul ul a {
     padding-left: 30px !important;
     background: #2F37A4;
 }
->>>>>>> 85c52131b6cbe02aff5a809d9c20edc43067cc04
 
 
 
