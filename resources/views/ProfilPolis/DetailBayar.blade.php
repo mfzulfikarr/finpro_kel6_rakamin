@@ -11,7 +11,7 @@
     @yield('css')
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    <link rel="stylesheet" href="css\profilpolis1.css">
+    <link rel="stylesheet" href="css\detailbayar.css">
     <!-- Scrollbar Custom CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
@@ -53,61 +53,11 @@
                       <!-- akhir navbar atas -->
                       @yield('isi')
 
-                      <section id="polis" class="polis">
-                        <div class="main">
-                            <div class="card">
-                            <h2>Ringkasan Polis</h2>
-                                <div class="card-body">
-                                    <div class="content-wrapper">
-                                        <img src="img/doona3.jpeg" class="img-left">
-                                        <table>
-                                            <tbody>
-                                                <tr>
-                                                    <td>Name</td>
-                                                    <td>:</td>
-                                                    <td>Bae Suzy</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>No Royalty Card</td>
-                                                    <td>:</td>
-                                                    <td>140810200006</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Email</td>
-                                                    <td>:</td>
-                                                    <td>baesuzy123@gmail.com</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Jenis Kelamin</td>
-                                                    <td>:</td>
-                                                    <td>Perempuan</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                        <a href="EditProfil">
-                                            <button class="edit-profile-button">Edit Profile</button>
-                                        </a>
-
-                                      </div>
-                                      <div class="card3">
-                                          <div class="polis-info">
-                                              <h6>Polis Aktif</h6>
-                                              <p>1</p>
-                                          </div>
-                                          <div class="polis-info">
-                                              <h6>Polis Tidak Aktif</h6>
-                                              <p>1</p>
-                                          </div>
-                                      </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
+                      
                     <section id="data-polis" class="data-polis">
                         <div class="main2">
                             <div class="card2">
-                              <h2>Data Polis</h2>
+                              <h2>Premi Lanjutan</h2>
                               <div class="search-bar">
                                   <input type="text" class="search-input" placeholder="Cari...">
                               </div>
@@ -117,11 +67,11 @@
                                           <tr>
                                               <th>No</th>
                                               <th>Nomer Polis</th>
-                                              <th>Produk</th>
+                                              <th>Nama Tertanggung</th>
                                               <th>Jatuh Tempo</th>
-                                              <th>Jumlah</th>
-                                              <th>Status Premi</th>
-                                              <th>Detai Polis</th>
+                                              <th>Frekuensi</th>
+                                              <th>Status Polis</th>
+                                              <th>Biaya Premi</th>
                                               <th>Bayar</th>
                                           </tr>
                                           </thead>
@@ -129,26 +79,22 @@
                                           <tr>
                                               <td>1</td>
                                               <td>140810200006</td>
-                                              <td>Investasi Link</td>
+                                              <td>Bae Suzy</td>
                                               <td>2/12/2023</td>
+                                              <td>Tahunan</td>
+                                              <td>Inforce</td>
                                               <td>Rp2000.000,00</td>
-                                              <td class="bg-success">Aktif</td>
-                                              <td class="bg-warning">Detail</td>
-                                              <td class="bg-warning">
-                                                <a href="DetailBayar" class="pay">Bayar</a>
-                                              </td>
+                                              <td class="bg-secondary">Paid</td>
                                           </tr>
                                           <tr>
                                               <td>2</td>
                                               <td>140810200006</td>
-                                              <td>Investasi Link</td>
+                                              <td>Bae Suzy</td>
                                               <td>2/12/2023</td>
+                                              <td>Tahunan</td>
+                                              <td>Inforce</td>
                                               <td>Rp2000.000,00</td>
-                                              <td class="bg-success">Aktif</td>
-                                              <td class="bg-warning">Detail</td>
-                                              <td class="bg-warning">
-                                                <a href="DetailBayar" class="pay">Bayar</a>
-                                              </td>
+                                              <td class="bg-warning">Pay</td>
                                           </tr>
                                           <tbody>
                                       </table>
@@ -161,6 +107,19 @@
                                     <i class="ri-skip-right-line"></i>
                                 </div>
                             </div>
+                        </div>
+                    </section>
+
+                    <section class="catatan" id="catatan">
+                        <div class="email">
+                            <h5 style="font-weight: bold;">Email Penerima (*) :</h5>
+                            <input type="text" class="input-email"  placeholder="Email">
+                        </div>
+                        <div class="note">
+                            <h5 style="font-weight: bold;">Catatan : </h5>
+                            <p>1. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <p>2. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <p>3. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         </div>
                     </section>
 
