@@ -3,6 +3,7 @@
 use App\Http\Controllers\dashboardController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\loginController;
+use App\Http\Controllers\ProfilPolisController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -41,7 +42,7 @@ Route::resource('/dashboard', dashboardController::class)->middleware('auth');
 //     return view('RP.RingkasanPolis');
 // });
 
-Route::get('/ProfilPolis1', function () {return view('ProfilPolis.ProfilPolis1');});
+Route::get('/ProfilPolis1', [ProfilPolisController::class, 'index']);
 Route::get('/DataPersonal1', function () {return view('ProfilPolis.DataPersonal1');});
 Route::get('/PenerimaManfaat1', function () {return view('ProfilPolis.PenerimaManfaat1');});
 Route::get('/RincianAgen1', function () {return view('ProfilPolis.RincianAgen1');});
