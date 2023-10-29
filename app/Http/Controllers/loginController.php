@@ -23,24 +23,24 @@ class loginController extends Controller
         // if (Auth::attempt($credentials)) {
         //     if(auth()->user()->is_admin){
 
-                return redirect('/dashboard');
+                // return redirect('/dashboard');
         //     }
         // }
         //  return back()->withErrors(['username' => 'username atau password salah']);
 
-        // $credentials = $request->validate([
-        //     'username'=>'required',
-        //     'password'=>'required'
-        // ]);
+        $credentials = $request->validate([
+            'username'=>'required',
+            'password'=>'required'
+        ]);
 
-        // if(Auth::attempt($credentials)){
-        //     $request->session()->regenerate();
-        //     if(auth()->user()->is_admin){
+        if(Auth::attempt($credentials)){
+            $request->session()->regenerate();
+            if(auth()->user()->is_admin){
 
-        //         return redirect('dashboard');
-        //     }
-        // }
-        // return back();
+                return redirect('/dashboard');
+            }
+        }
+        return back();
 
     }
 }

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{{-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -478,4 +478,7 @@
         @yield('JS')
         <script src="{{ asset('js1.js') }}"></script>
 </body>
-</html>
+</html> --}}
+
+
+
