@@ -38,7 +38,7 @@
                     <div class="form-group">
                         <label for="">Nomor Loyalty Card (*)</label>
                         <div>
-                          <input type="text" class="form-control" id="LAC" aria-describedby="loginhelp" minlength="16" maxlength="16" required name="lac">
+                          <input type="text" class="form-control" id="LAC" aria-describedby="loginhelp" name="no_lac">
                           <small id="loginhelp" class="text-muted my-auto">16 Digit Nomor LAC</small>
                         </div>
                     </div>
@@ -46,7 +46,7 @@
                     <div class="form-group">
                         <label for="">No Polis (*)</label>
                         <div>
-                          <input type="text" class="form-control" id="NoPol" aria-describedby="loginhelp" minlength="12" maxlength="12" required name="no_polis">
+                          <input type="text" class="form-control" id="NoPol" aria-describedby="loginhelp"  name="no_polis">
 
                           <small id="loginhelp" class="text-muted my-auto">Salah satu dari polis yang dimiliki - 12 digit</small>
                         </div>
@@ -55,7 +55,7 @@
                     <div class="form-group">
                         <label for="">Username (*)</label>
                         <div>
-                          <input type="text" class="form-control" id="Username" aria-describedby="loginhelp" minlength="3" maxlength="12" required name="username">
+                          <input type="text" class="form-control" id="Username" aria-describedby="loginhelp"  name="username">
                           <small id="loginhelp" class="text-muted my-auto">Masukkan 3 - 12 karakter</small>
                         </div>
                     </div>
@@ -63,26 +63,26 @@
                     <div class="form-group">
                         <label for="">Email (*)</label>
                         <div>
-                          <input type="email" class="form-control" id="Email" aria-describedby="loginhelp" minlength="3" maxlength="30" required name="email">
+                          <input type="email" class="form-control" id="Email" aria-describedby="loginhelp"  name="email">
                         </div>
                     </div>
                     <div class="form-group" >
                         <label for="inputPassword3">Password (*)</label>
                         <div>
-                            <input type="password" class="form-control" id="passbaru" minlength="7" maxlength="20" aria-describedby="passwordHelpInline" required name="password">
+                            <input type="password" class="form-control" id="passbaru" aria-describedby="passwordHelpInline"  name="password">
                             <span id="mybutton" onclick="change()"><i class="fas fa-eye fa-sm"></i></span>
                             <small id="passwordHelpInline" class="text-muted my-auto" style="float: right;">Masukkan 7-20 Karakter.</small>
                         </div>
                     </div>
 
-                    <div class="form-group">
+                    {{-- <div class="form-group">
                         <label for="inputPassword3">Konfirmasi Password (*)</label>
                         <div>
-                          <input type="password" class="form-control" id="passbaru2" minlength="7" maxlength="20" aria-describedby="passwordHelpInline" required>
+                          <input type="password" class="form-control" id="passbaru2" aria-describedby="passwordHelpInline" >
                           <span id="mybutton2" onclick="show()"><i class="fas fa-eye fa-sm"></i></span>
                           <small id="passwordHelpInline" class="text-muted my-auto">Masukkan 7-20 Karakter.</small>
                         </div>
-                    </div>
+                    </div> --}}
 
                     <span>
                         <center>
@@ -100,7 +100,7 @@
 
         </div>
 
-        <!-- Modal Alert Register -->
+        {{-- <!-- Modal Alert Register -->
       <div class="modal fade" tabindex="-1" id="PassBerhasil" data-backdrop="static" data-keyboard="false" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
@@ -117,7 +117,7 @@
 
             </div><!-- /.modal-content -->
           </div><!-- /.modal-dialog -->
-        </div><!-- /.modal -->
+        </div><!-- /.modal --> --}}
 
 
          <!-- jQuery CDN - Slim version (=without AJAX) -->

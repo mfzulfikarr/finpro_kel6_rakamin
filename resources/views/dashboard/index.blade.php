@@ -1,4 +1,4 @@
-{{-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -26,7 +26,7 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
     crossorigin="anonymous">
-    
+
 
 
 </head>
@@ -49,7 +49,7 @@
 
         <!-- Page Content  -->
         <div id="content">
-            
+
                       <!-- akhir navbar atas -->
                       @yield('isi')
 
@@ -57,14 +57,14 @@
                         <div class="row2">
                             <div class="content2">
                                 <h3>Taking Care of What's  Important</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                   Unde, maiores. Recusandae numquam, molestiae nemo, maxime quos earum dolorem, voluptatum voluptatem aliquid iste eaque cum consectetur natus vitae cumque illo fuga!</p>
                                 <a href="#" class="cta">Learning More</a>
                             </div>
                         </div>
                       </section>
-                      
-                      
+
+
                       <!--<section class="blog-card">
                         <div class="row">
                           <img
@@ -97,8 +97,8 @@
                         </div>
                       </section>
 
-                      
-                      
+
+
                       <div class="slogan">
                         <h1>WE PROVIDE THE BEST INSURANCE POLICY</h1>
                       </div>
@@ -122,13 +122,15 @@
                           <h3>Let's Try Our Best Calculator</h3>
                         </div>
                         <div class="mtk">
-                          <h4>My <input type="number" id="age" placeholder="Age"> and I want to save my money about 
+                          <h4>My <input type="number" id="age" placeholder="Age"> and I want to save my money about
                           <input type="number" id="saveAmount" placeholder="Enter an amount"></h4>
                           <button class="btn-calculator">Result</button>
                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto nihil nisi pariatur eum quam, ut eveniet mollitia perspiciatis ducimus ab nemo, debitis laborum corrupti nostrum. Excepturi culpa porro distinctio nulla!</p>
                         </div>
                       </section>
 
+
+{{-- FOOTER --}}
                       <footer class="footer-distributed">
 
                         <div class="footer-left">
@@ -137,11 +139,11 @@
 
                           <p class="footer-links">
                             <a href="#home" class="link-1">Home</a>
-                          
+
                             <a href="kamera.html">Asuransi</a>
-                          
+
                             <a href="#about">Iklan & Layanan</a>
-                            
+
                             <a href="#">Tentang Kami</a>
                           </p>
 
@@ -191,7 +193,7 @@
         </div>
     </div>
 
-    
+
     <div class="overlay"></div>
 
     <!-- jQuery CDN - Slim version (=without AJAX) -->
@@ -219,7 +221,7 @@
 
 
 </body>
-</html> --}}
+</html>
 
 
 
