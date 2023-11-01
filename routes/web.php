@@ -43,6 +43,9 @@ Route::resource('/dashboard', dashboardController::class)->middleware('auth');
 
 Route::get('/ProfilPolis1', function () {return view('ProfilPolis.ProfilPolis1');});
 Route::get('/DataPersonal1', function () {return view('ProfilPolis.DataPersonal1');});
+Route::get('/EditProfil', function () {return view('ProfilPolis.EditProfil');});
+Route::get('/DetailBayar', function () {return view('ProfilPolis.DetailBayar');});
+Route::get('/DetailBayar2', function () {return view('ProfilPolis.DetailBayar2');});
 Route::get('/PenerimaManfaat1', function () {return view('ProfilPolis.PenerimaManfaat1');});
 Route::get('/RincianAgen1', function () {return view('ProfilPolis.RincianAgen1');});
 Route::get('/RincianUnitLink1', function () {return view('ProfilPolis.RincianUnitLink1');});
